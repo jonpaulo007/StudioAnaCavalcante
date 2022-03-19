@@ -8,35 +8,42 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/img/favicon.png">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+   
 </head>
 
 <body>
     <header class="cabecalho">
-        <img class="cabecalho-imagem" src="assets/img/Logo.png" alt="Logo Studio Ana Cavalcante">
-        <button class="botao-cabecalho" href="#">Agende sua aula experimental</button>
-        <nav class="cabecalho-menu">
-            <a class="cabecalho-menu-item" href="#">Home</a>
-            <a class="cabecalho-menu-item" href="#">Quem somos</a>
-            <a class="cabecalho-menu-item" href="#">Especialidades</a>
-            <a class="cabecalho-menu-item" href="#">Contato</a>
-        </nav>
+        <a href="index.html"><img class="cabecalho-imagem" src="assets/img/Logo.png" alt="Logo Studio Ana Cavalcante"></a>
+        <a class="botao-cabecalho" href="https://api.whatsapp.com/send?phone=5582996915416&text=Olá,Desejo%20realizar%20minha%20aula%20experimental" target="blank">Agende sua aula experimental</a>        
     </header>
+
+    <div class="bloco-menu">
+        <nav class="menu">
+            <a class="menu-item" href="index.html">Home</a>
+            <a class="menu-item" href="#quem-somos">Quem somos</a>
+            <a class="menu-item" href="#especialidades">Especialidades</a>
+            <a class="menu-item" href="#contato">Contato</a>
+        </nav>
+    </div>
+    
 
     <main class="conteudo">
         <section class="conteudo-principal">
-            <div class="conteudo-principal-bloco">
-                <img class="conteudo-principal-imagem" src="assets/img/banner-principal.jpg" alt="imagem principal">
+            <div class="conteudo-principal-bloco">                
                 <h3 class="conteudo-principal-texto-imagem">Tire um tempo para se cuidar</h3>
             </div>    
         </section>
 
-        <section class="conteudo-secundario">
-            <h2 class="conteudo-secundario-titulo">Quem somos</h2>
-            <h3 class="conteudo-secundario-subtitulo">Studio Ana Cavalcante</h3>
-            <img class="conteudo-secundario-imagem" src="assets/img/imagem-doutora.png">
+        <section id="quem-somos" class="conteudo-secundario">            
+            <div class="conteudo-secundario-cabecalho">
+                <h1 class="conteudo-secundario-titulo">Quem somos</h1>
+                <h4 class="conteudo-secundario-subtitulo">Studio Ana Cavalcante</h4>
+            </div>            
+
             <div class="conteudo-secundario-bloco-ecrito">
+                <img class="conteudo-secundario-imagem" src="assets/img/imagem-doutora.png">
                 <p class="conteudo-secundario-bloco-escrito-texto">
-                    Oi gente, quero me apresentar oficialmente para vocês. 
+                    Oi gente, quero me apresentar oficialmente para vocês.
                     Meu nome é Ana Cavalcante Porto, tenho 26 anos e sou natural de Maceió - Alagoas.                     
                     Sou a única mulher entre 4 irmãos, minha vida não foi fácil kkk . Casada, cristã e amante de açaí!!!                    
                     Amo cuidar de pessoas, principalmente de idosos. Por esse motivo me formei em Fisioterapia. Trabalho na área há 4 anos. Sou pós graduada em Fisioterapia Dermatofuncional e formação em Pilates.                     
@@ -48,41 +55,41 @@
         </section>
         
         
-        <section class="conteudo-terceiro">
-            <h2 class="conteudo-terceiro-titulo">Nossas Especialidades somos</h2>
+        <section id="especialidades" class="conteudo-terceiro">
+            <h2 class="conteudo-terceiro-titulo">Nossas Especialidades</h2>
             <h3 class="conteudo-terceiro-subtitulo">Conheça aqui os serviços prestados</h3>
             <div class="conteudo-terceiro-bloco-cards">
                 <div class="conteudo-terceiro-cards">
-                    <img class="conteudo-terceiro-cards-img">
-                    <div class="conteudo-terceiro-cards-escrito">
+                    <img class="conteudo-terceiro-cards-img" src="assets/img/fisioterapia-convencional.jpeg" alt="Imagem de Fisioterapia convencional">
+                    <div class="conteudo-terceiro-cards-texto">
                         <h3 class="conteudo-terceiro-cards-escrito-titulo">Fisioterapia Convencional</h3>
                         <p class="conteudo-terceiro-cards-escrito-texto">Beneficio</p>
                     </div>
                 </div>
                 <div class="conteudo-terceiro-cards">
-                    <img class="conteudo-terceiro-cards-img">
-                    <div class="conteudo-terceiro-cards-img">
+                    <img class="conteudo-terceiro-cards-img" src="assets/img/Liberação-miofascial.jpeg">
+                    <div class="conteudo-terceiro-cards-texto">
                         <h3 class="conteudo-terceiro-cards-escrito-titulo">Liberação Miofascial</h3>
                         <p class="conteudo-terceiro-cards-escrito-texto">Beneficio</p>
                     </div>
                 </div>
                 <div class="conteudo-terceiro-cards">
-                    <img class="conteudo-terceiro-cards-img">
-                    <div class="conteudo-terceiro-cards-img">
+                    <img class="conteudo-terceiro-cards-img" src="assets/img/limpeza-de-pele.jpg">
+                    <div class="conteudo-terceiro-cards-texto">
                         <h3 class="conteudo-terceiro-cards-escrito-titulo">Limpeza de Pele</h3>
                         <p class="conteudo-terceiro-cards-escrito-texto">Beneficio</p>
                     </div>
                 </div>
                 <div class="conteudo-terceiro-cards">
-                    <img class="conteudo-terceiro-cards-img">
-                    <div class="conteudo-terceiro-cards-img">
+                    <img class="conteudo-terceiro-cards-img" src="assets/img/pilates.jpeg">
+                    <div class="conteudo-terceiro-cards-texto">
                         <h3 class="conteudo-terceiro-cards-escrito-titulo">Pilates</h3>
                         <p class="conteudo-terceiro-cards-escrito-texto">Beneficio</p>
                     </div>
                 </div>
                 <div class="conteudo-terceiro-cards">
-                    <img class="conteudo-terceiro-cards-img">
-                    <div class="conteudo-terceiro-cards-img">
+                    <img class="conteudo-terceiro-cards-img" src="assets/img/Ventosa.jpeg">
+                    <div class="conteudo-terceiro-cards-texto">
                         <h3 class="conteudo-terceiro-cards-escrito-titulo">Ventosa</h3>
                         <p class="conteudo-terceiro-cards-escrito-texto">Beneficio</p>
                     </div>
@@ -90,7 +97,7 @@
             </div>
         </section>
 
-        <section class="conteudo-quarto">
+        <section id="contato" class="conteudo-quarto">
             <h2 class="conteudo-quarto-titulo">Contato</h2>
             <h3 class="conteudo-quarto-subtitulo">Fale conosco para mais informações</h3>
             <!-- mapa-->
@@ -111,8 +118,9 @@
         <div class="bloco-rodape">
             <img class="rodape-imagem" src="assets/img/Logo.png" alt="Logo Studio Ana Cavalcante">
         </div>
-        <div class="copy">&copy;2022 por Studio Ana Cavalvante.</div>
+        <div class="copy">&copy;2022 por Studio Ana Cavalvante. Desenvolvido por João Cavalcante.</div>
     </footer>
+    
 </body>
 
 </html>
