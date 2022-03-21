@@ -159,12 +159,13 @@ body{
     line-height: 2px;
 }
 
-.conteudo-terceiro-bloco-cards{
+.conteudo-terceiro-bloco-cards, .conteudo-terceiro-bloco-cards-dois{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-align: center;
     margin-top: 80px;
     font-family: 'Poppins', sans-serif;
+    padding: 0px 15%;
     
 }
 .conteudo-terceiro-cards-img{
@@ -186,4 +187,104 @@ body{
 }
 .conteudo-terceiro-cards-escrito-titulo{
     color: var(--rosa-hover-color);
+}
+
+/* estilização conteudo Quarto */
+
+.conteudo-quarto{
+    padding: 40px 0px;
+    background: #ffffff;
+}
+.conteudo-quarto-titulo, .conteudo-quarto-subtitulo{
+    display: flex;
+    flex-direction: row;  
+    justify-content: center;
+}
+
+.conteudo-quarto-titulo{
+    font-family: 'Poppins', sans-serif;
+    color: var(--rosa-color);
+    font-size: 28pt;
+}
+.conteudo-quarto-subtitulo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12pt;
+    font-weight: 400;
+    line-height: 2px;
+}
+.conteudo-quarto-bloco-contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+}
+.mapa{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.bloco-contato{
+    width: 30%;
+    padding: 0px 50px;
+    font-family: 'Poppins', sans-serif;
+}
+.conteudo-quarto-bloco-contato-titulo{
+    font-size: 18pt;
+    color: 222222;
+}
+.informacoes{
+    display: flex;
+    flex-direction: column; 
+    gap: 5px;  
+    padding: 10px 0px;
+    
+}
+.conteudo-quarto-bloco-contato-informacoes{
+    font-size: 11pt;
+    font-weight: 300;
+    vertical-align: middle; 
+}
+.icons{
+   font-size: 28px;
+   color: var(--rosa-hover-color);
+   padding: 0px 5px;
+   
+}
+.conteudo-quarto-bloco-contato-social{
+    font-size: 16pt;
+    color: #222222;
+}
+
+.conteudo-quarto-bloco-contato-botao{
+    background: var(--rosa-color);
+    width: 290px;    
+    border: none;
+    font-size: 13pt;
+    border-radius: 15px;
+    color: #ffffff;
+    text-align: center;
+    padding: 18px;
+    margin-top: 50px;
+}
+.conteudo-quarto-bloco-contato-botao:hover{
+    background: var(--rosa-hover-color);
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* estilização conteudo Quarto */
+
+.bloco-rodape{
+    text-align: center;
+    padding: 50px;
+}
+
+.rodape-imagem{
+    width: 30%;
+}
+.copy{
+    padding: 10px 0px;
+    background: #222222;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10pt;
+    text-align: center;
 }
