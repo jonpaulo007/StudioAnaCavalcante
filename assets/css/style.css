@@ -1,91 +1,116 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
-/* variaveis de cores */
+/* variaveis */
 :root{
     --rosa-color: #ec89c7;
     --rosa-hover-color: #da62ae;
     --verde-color: #d7f9f2;
+    --branco-color: #fff;
+    --grayishBlue: #a3a5ae;
+    --varyDarkBlue: #4c4e61;
+    --weight3: 600;
 }
 
 /* reset css */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    margin: 0;
+    padding: 0;
+    outline: 0;
 }
-
+html,
 body{
-    font-size: 100%;
-    background: var(--verde-color)
+    height: 100vh;
+    background: var(--branco-color);
+    font-family: 'Poppins', sans-serif;
 }
 
-
-/* estilização header */
-.cabecalho{
+/* configurando header */
+header .container{
+    background: var(--verde-color);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 18px 0px;
-    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    margin: auto;
+    
 }
 
-.cabecalho-imagem{
-    width: 15em;
+header img {
+    width: 180px;
+    margin-left: 20px;
+    padding: 15px 0;
 }
 
-.botao-cabecalho{
-    background: var(--rosa-color);
-    width: 290px;    
-    border: none;
-    font-size: 12pt;
-    border-radius: 15px;
-    color: #ffffff;
-    text-align: center;
-    padding: 18px;
+header nav ul {
+    display: flex;
+    gap: 15px;
 }
 
-.botao-cabecalho:hover{
-    background: var(--rosa-hover-color);
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--rosa-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 24px;
+    transition: all 250ms linear 0s;
 }
 
-/* estilização menu */
-.bloco-menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background: var(--rosa-color);    
+header nav ul li a:hover {
+    color: var(--rosa-hover-color);
+
 }
 
-.menu{
-    display: flex;
-    gap: 10px;
+/* configurando buttom-aula*/
+.buttom-aula{
+    background-color: var(--rosa-hover-color);
+    border-radius: 10px;
+    color: white;
 }
+.buttom-aula:hover{
+    background-color: var(--branco-color);
+}
+
+/* configurando hover after nav*/
 .menu-item{
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    font-size: 12pt;
-    padding: 20px; 
-}
-.menu-item:hover{
-    background: var(--rosa-hover-color);
+    position: relative;
     text-decoration: none;
-    color: #ffffff;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+    display: flex;
+}
+.menu-item:after{
+    content: "";
+    position: absolute;
+    background-color: var(--rosa-color);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.menu-item:hover:after{
+    width: 100%;
 }
 
-/* estilização conteudo principal */
-.conteudo-principal-bloco{
-    background-image: url(../img/banner-principal.jpg);  
+/*Configurando hero */
+section .container-hero{
+    background-image: url(../img/banner-principal.jpg);
     background-size: cover;
     height: 90vh;
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    display: flex;    
     align-items: center;
 }
-.conteudo-principal-texto-imagem{
+
+section .texto-imagem{
     font-size: 96pt;
     font-family: 'Poppins', sans-serif; 
     font-weight: 700; 
@@ -94,184 +119,160 @@ body{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* estilização conteudo secundario */
-.conteudo-secundario{
-    background: #ffffff;
+/*Configurando títulos/sub */
+section .container-titulos{
     padding: 40px 0px;
 }
-
-.conteudo-secundario-titulo, .conteudo-secundario-subtitulo, 
-.conteudo-secundario-bloco-ecrito{
+section .titulo, .subtitulo{
     display: flex;
-    flex-direction: row;  
     justify-content: center;
 }
-.conteudo-secundario-titulo {
-    font-family: 'Poppins', sans-serif;
+section .titulo{
     color: var(--rosa-color);
-    font-size: 28pt;
+    font-size: 28pt;   
 }
-
-.conteudo-secundario-subtitulo{
-    font-family: 'Poppins', sans-serif;
+section .subtitulo{
+    position: relative;
     font-size: 12pt;
     font-weight: 400;
-    line-height: 2px;
+    line-height: 10px;
+}
+section .subtitulo:after{
+    content: "";
+    position: absolute;
+    background-color: var(--rosa-color);
+    height: 3px;
+    width: 100px;
+    bottom: -15px;
+    transition: 0.5s;
 }
 
-.conteudo-secundario-bloco-ecrito{
+/*Configurando apresentacao */
+section .container-apresentacao-imagens-texto{
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 30px;
+    justify-content: center;
 }
-
-.conteudo-secundario-imagem{
+section .texto-apresentacao{
+    text-align: justify;
+    width: 40%;
+    font-size: 16pt;
+    margin: 0px 20px;
+}
+section .imagem-apresentacao{
     background-image: url(../img/fundo-rosa.svg);
     background-repeat: no-repeat;
     background-position: bottom;
 }
-.conteudo-secundario-bloco-escrito-texto{
-    text-align: justify;
-    width: 40%;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16pt;
-}
 
-/* estilização conteudo terceiro */
-.conteudo-terceiro{
-    padding: 40px 0px;
-}
-
-.conteudo-terceiro-titulo, .conteudo-terceiro-subtitulo{
-    display: flex;
-    flex-direction: row;  
-    justify-content: center;
-}
-
-.conteudo-terceiro-titulo{
-    font-family: 'Poppins', sans-serif;
-    color: var(--rosa-color);
-    font-size: 28pt;
-}
-.conteudo-terceiro-subtitulo{
-    font-family: 'Poppins', sans-serif;
-    font-size: 12pt;
-    font-weight: 400;
-    line-height: 2px;
-}
-
-.conteudo-terceiro-bloco-cards, .conteudo-terceiro-bloco-cards-dois{
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    margin-top: 80px;
-    font-family: 'Poppins', sans-serif;
-    padding: 0px 15%;
-    
-}
-.conteudo-terceiro-cards-img{
-    width: 15vw;
-    height: 25vh;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    max-width: 100%;
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-.conteudo-terceiro-cards-img:hover{
-   -moz-transform: scale(1.1);
-   -webkit-transform: scale(1.1);
-   transform: scale(1.1);
-    
-}
-.conteudo-terceiro-cards-escrito-titulo{
-    color: var(--rosa-hover-color);
-}
-
-/* estilização conteudo Quarto */
-
-.conteudo-quarto{
-    padding: 40px 0px;
-    background: #ffffff;
-}
-.conteudo-quarto-titulo, .conteudo-quarto-subtitulo{
-    display: flex;
-    flex-direction: row;  
-    justify-content: center;
-}
-
-.conteudo-quarto-titulo{
-    font-family: 'Poppins', sans-serif;
-    color: var(--rosa-color);
-    font-size: 28pt;
-}
-.conteudo-quarto-subtitulo{
-    font-family: 'Poppins', sans-serif;
-    font-size: 12pt;
-    font-weight: 400;
-    line-height: 2px;
-}
-.conteudo-quarto-bloco-contato{
+/*Configurando nossas especialidades */
+section .container-card1{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 50px;
 }
-.mapa{
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+section .container-card2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.box {
+    width: 20%;
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+    padding: 30px;
+    margin: 20px; 
+}
+.box p {
+    color: var(--grayishBlue);
+}
+.cor-borda {
+    border-top: 3px solid var(--rosa-color);
+}
+.img-cards{
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+}
+.titulo-card {
+    color: var(--varyDarkBlue);
+    font-weight: var(--weight3);
+    font-size: 16pt;
+    text-align: center;
+}
+.texto-card{
+    text-align: justify;
+}
+
+/*Configurando contato */
+.contato{
+    margin-top: 30px;
+    padding-bottom: 40px;
+    background-color: var(--verde-color);
+}
+.container-contato{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
 }
 .bloco-contato{
     width: 30%;
     padding: 0px 50px;
-    font-family: 'Poppins', sans-serif;
 }
-.conteudo-quarto-bloco-contato-titulo{
+.titulo-contato{
     font-size: 18pt;
-    color: 222222;
+    color: var(--rosa-color);
 }
-.informacoes{
+.bloco-mapa{
+    box-shadow: 0px 30px 40px -10px var(--grayishBlue);
+}
+.bloco-dados-contato{
     display: flex;
     flex-direction: column; 
     gap: 5px;  
-    padding: 10px 0px;
-    
+    padding: 10px 0px; 
 }
-.conteudo-quarto-bloco-contato-informacoes{
+.dados-contato{
     font-size: 11pt;
     font-weight: 300;
-    vertical-align: middle; 
+    display: flex;
+    align-items: center;
 }
-.icons{
-   font-size: 28px;
-   color: var(--rosa-hover-color);
-   padding: 0px 5px;
-   
+.icons-contato{
+    font-size: 28px;
+    color: var(--rosa-color);
+    padding: 0px 5px;
 }
-.conteudo-quarto-bloco-contato-social{
+.titulo-social{
     font-size: 16pt;
-    color: #222222;
+    color: var(--rosa-color);
 }
-
-.conteudo-quarto-bloco-contato-botao{
+.bloco-social{
+    display: flex;
+    flex-direction: column;
+}
+.botao-contato{
     background: var(--rosa-color);
     width: 290px;    
     border: none;
     font-size: 13pt;
     border-radius: 15px;
-    color: #ffffff;
+    color: var(--branco-color);
     text-align: center;
     padding: 18px;
-    margin-top: 50px;
+    margin-top: 10px;
 }
-.conteudo-quarto-bloco-contato-botao:hover{
-    background: var(--rosa-hover-color);
+.botao-contato:hover{
+    background: var(--branco-color);
     text-decoration: none;
-    color: #ffffff;
+    color: var(--rosa-color);
+    transition: 0.5s;
 }
 
-/* estilização conteudo Quarto */
-
+/*Configurando rodape */
 .bloco-rodape{
     text-align: center;
     padding: 50px;

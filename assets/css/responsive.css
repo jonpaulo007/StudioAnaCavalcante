@@ -1,0 +1,452 @@
+/* estilização breakpoints */
+@media (max-width: 1440px) {
+    /* menu */
+    header img{
+        width: 180px;
+    }
+    header nav ul li a {
+        font-size: 13px;
+    }
+    
+    /* hero */
+    section .texto-imagem{
+        font-size: 82pt;
+    }
+    section .container-hero{
+        height: 80vh;
+    }
+    /* quem somos */
+    section .container-titulos{
+        padding: 20px 0px;
+    }
+    section .titulo{
+        font-size: 18pt; 
+    }
+    section .container-apresentacao-imagens-texto{
+        flex-direction: row;
+        padding: 30px 20px;
+ 
+    }
+    section .imagem-apresentacao{
+        width: 35%;
+        border-radius: 10%;
+        margin-bottom: 20px ;
+    }
+    section .texto-apresentacao{
+        width: 35%;
+        font-size: 13pt;
+    }
+
+    /* nossas especialidades */
+    section .container-card1{
+        display: flex;
+        flex-direction: row;
+    }
+    section .container-card2{
+        display: flex;
+        flex-direction: row;
+    }
+    .box {
+        width: 25%;
+        padding: 30px;
+        margin: 15px; 
+    }
+    .titulo-card {
+        color: var(--varyDarkBlue);
+        font-weight: var(--weight3);
+        font-size: 14pt;
+        text-align: center;
+    }
+    .texto-card{
+        text-align: justify;
+        font-size: 11pt;
+    }
+}
+@media (max-width: 1024px) {
+    /* hero */
+    section .texto-imagem{
+        font-size: 52pt;
+    }
+    section .container-hero{
+        height: 70vh;
+    }
+    /* quem somos */
+    section .container-titulos{
+        padding: 20px 0px;
+    }
+    section .titulo{
+        font-size: 18pt; 
+    }
+    section .container-apresentacao-imagens-texto{
+        flex-direction: row;
+        padding: 30px 20px;
+    }
+    section .imagem-apresentacao{
+        width: 30%;
+        border-radius: 10%;
+        margin-bottom: 20px ;
+    }
+    section .texto-apresentacao{
+        width: 90%;
+        font-size: 12pt;
+    }
+
+    /* nossas especialidades */
+    section .container-card1{
+        display: flex;
+        flex-direction: row;
+    }
+    section .container-card2{
+        display: flex;
+        flex-direction: row;
+    }
+    .box {
+        width: 30%;
+        padding: 30px;
+        margin: 15px; 
+    }
+    .titulo-card {
+        color: var(--varyDarkBlue);
+        font-weight: var(--weight3);
+        font-size: 13pt;
+        text-align: center;
+    }
+    .texto-card{
+        text-align: justify;
+        font-size: 10pt;
+    }
+
+    /* contato */
+    .bloco-mapa{
+        padding: 10px;
+        width: 100%;
+        box-shadow: none;
+        display: flex;
+    }
+    .mapa{
+       width: 100%; 
+    }
+    .container-contato{
+        display: flex;
+        flex-direction: row;
+    }
+    .bloco-contato{
+        width: 100%;
+        padding: 20px;
+    }
+    .titulo-contato{
+        font-size: 15pt;
+    }
+    .dados-contato{
+        font-size: 11pt;
+    }
+    .icons-contato{
+        font-size: 28px;
+    }
+    .titulo-social{
+        font-size: 15pt;
+    }
+    .botao-contato{
+        width: 290px;    
+        font-size: 11pt;
+    }
+}
+@media (max-width: 768px) {
+    /* menu */
+    header nav ul {
+        display: flex;
+        gap: 0px;
+    }
+    header img{
+        width: 130px;
+    }
+    header nav ul li a {
+        font-size: 11px;
+    }
+
+    /* hero */
+    section .texto-imagem{
+        font-size: 52pt;
+    }
+    section .container-hero{
+        height: 50vh;
+    }
+
+    /* quem somos */
+    section .container-titulos{
+        padding: 20px 0px;
+    }
+    section .titulo{
+        font-size: 18pt; 
+    }
+    section .container-apresentacao-imagens-texto{
+        flex-direction: row;
+        padding: 30px 20px;
+    }
+    section .imagem-apresentacao{
+        width: 40%;
+        border-radius: 10%;
+        margin-bottom: 20px ;
+    }
+    section .texto-apresentacao{
+        width: 90%;
+        font-size: 11pt;
+    }
+
+    /* nossas especialidades */
+    section .container-card1{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    section .container-card2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .box {
+        width: 60%;
+        padding: 30px;
+        margin: 15px; 
+    }
+    .titulo-card {
+        color: var(--varyDarkBlue);
+        font-weight: var(--weight3);
+        font-size: 16pt;
+        text-align: center;
+    }
+    .texto-card{
+        text-align: justify;
+        font-size: 12pt;
+    }
+
+    /* contato */
+    .bloco-mapa{
+        padding: 10px;
+        width: 100%;
+        box-shadow: none;
+    }
+    .mapa{
+       width: 100%; 
+    }
+    .container-contato{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .bloco-contato{
+        width: 100%;
+        padding: 20px;
+    }
+    .titulo-contato{
+        font-size: 13pt;
+    }
+    .dados-contato{
+        font-size: 9pt;
+    }
+    .icons-contato{
+        font-size: 25px;
+    }
+    .titulo-social{
+        font-size: 12pt;
+    }
+    .botao-contato{
+        width: 290px;    
+        font-size: 11pt;
+    }
+
+    /* rodape */
+    .rodape-imagem{
+        width: 50%;
+    }
+    .copy{
+        font-size: 10pt;
+    }
+}
+
+@media (max-width: 630px) {
+    header nav ul {
+        display: flex;
+        gap: 0px;
+    }
+    header img{
+        width: 130px;
+    }
+    header nav ul li a {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 540px) {
+    /* menu */
+    header img{
+        width: 180px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .one,
+    .two,
+    .three {
+        background-color: var(--rosa-color);
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: 0.3s;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+        margin-right: 20px;
+    }
+
+    /* fullscreen */
+    .menu-section.on {
+        position: absolute;
+        top:0;
+        left:0;
+        
+        width: 100vw;
+        height: 100vh;
+
+        background-color: var(--verde-color);
+        
+        z-index: 10;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-section.on nav {
+        display: block;
+    }
+
+    .menu-section.on .menu-toggle {
+        position: absolute;
+        right: 25px;
+        top: 15px;
+    }
+
+    .menu-section.on .menu-toggle .one {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu-section.on .menu-toggle .two {
+        opacity: 0;
+    }
+
+    .menu-section.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    .menu-section.on nav ul {
+        text-align: center;
+        display: block;
+    }
+
+    .menu-section.on nav ul a{
+        transition-duration: 0.5s;
+        font-size: 1rem;
+        line-height: 3rem;
+        display: block; 
+    }
+    
+    /* hero */
+    section .container-hero{
+        height: 20vh;
+    }
+    section .texto-imagem{
+        font-size: 25pt;
+    }
+    
+    /* quem somos */
+    section .container-titulos{
+        padding: 20px 0px;
+    }
+    section .titulo{
+        font-size: 18pt; 
+    }
+
+    section .container-apresentacao-imagens-texto{
+        flex-direction: column;
+    }
+    section .imagem-apresentacao{
+        width: 90%;
+        border-radius: 10%;
+        margin-bottom: 20px ;
+    }
+    section .texto-apresentacao{
+        width: 90%;
+        font-size: 11pt;
+    }
+
+    /* nossas especialidades */
+    section .container-card1{
+        display: flex;
+        flex-direction: column;
+    }
+    section .container-card2{
+        display: flex;
+        flex-direction: column;
+    }
+    .box {
+        width: 90%;
+        padding: 30px;
+        margin: 15px; 
+    }
+    .titulo-card {
+        color: var(--varyDarkBlue);
+        font-weight: var(--weight3);
+        font-size: 13pt;
+        text-align: center;
+    }
+    .texto-card{
+        text-align: justify;
+        font-size: 10pt;
+    }
+
+    /* contato */
+    .bloco-mapa{
+        box-shadow: none;
+    }
+    .mapa{
+       width: 100%; 
+    }
+    .container-contato{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .bloco-contato{
+        width: 100%;
+        padding: 20px;
+    }
+    .titulo-contato{
+        font-size: 13pt;
+    }
+    .dados-contato{
+        font-size: 9pt;
+    }
+    .icons-contato{
+        font-size: 25px;
+    }
+    .titulo-social{
+        font-size: 12pt;
+    }
+    .botao-contato{
+        width: 290px;    
+        font-size: 11pt;
+    }
+
+    /* rodape */
+    .rodape-imagem{
+        width: 100%;
+    }
+    .copy{
+        font-size: 8pt;
+    }
+}

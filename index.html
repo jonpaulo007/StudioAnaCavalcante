@@ -6,134 +6,146 @@
     <meta name="description" content="Tire um tempo para se cuidar. Agende já sua aula experimental!">
     <title>Studio Ana Cavalcante</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="shortcut icon" href="assets/img/favicon.png">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     
    
 </head>
 
-<body>
-    <header class="cabecalho">
-        <a href="index.html"><img class="cabecalho-imagem img-fluid" src="assets/img/Logo-tranparente.png" alt="Logo Studio Ana Cavalcante"></a>
-        <a class="botao-cabecalho" href="https://api.whatsapp.com/send?phone=5582996915416&text=Olá,Desejo%20realizar%20minha%20aula%20experimental" target="blank">Agende sua aula experimental</a>        
+<body id="body">
+
+    <header>
+        <div class="container">
+            <a href="index.html"><img class="cabecalho-imagem" src="assets/img/Logo.png" alt="Studio Ana Cavalcante"></a>
+            <div id="menuSection" class="menu-section">
+                <div class="menu-toggle">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a class="menu-item" href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="menu-item" href="#quem-somos" onclick="reset()">Quem somos</a>
+                        </li>
+                        <li>
+                            <a class="menu-item" href="#especialidades" onclick="reset()">Especialidades</a>
+                        </li>
+                        <li>
+                            <a class="menu-item" href="#contato" onclick="reset()">Contato</a>
+                        </li>
+                        <li>
+                            <a class="menu-item buttom-aula" href="https://api.whatsapp.com/send?phone=5582996830817&text=Olá,Desejo%20realizar%20minha%20aula%20experimental">Agende sua aula experimental</a>
+                        </li>
+                    </ul>
+                    
+                </nav>
+            </div>
+        </div>
     </header>
 
-    <div class="bloco-menu">
-        <nav class="menu">
-            <a class="menu-item" href="index.html">Home</a>
-            <a class="menu-item" href="#quem-somos">Quem somos</a>
-            <a class="menu-item" href="#especialidades">Especialidades</a>
-            <a class="menu-item" href="#contato">Contato</a>
-        </nav>
-    </div>
-    
+    <section class="hero">
+        <div class="container-hero">
+            <h3 class="texto-imagem">Tire um tempo para se cuidar</h3>
+        </div>
+    </section>
 
-    <main class="conteudo">
-        <section class="conteudo-principal">
-            <div class="conteudo-principal-bloco">                
-                <h3 class="conteudo-principal-texto-imagem">Tire um tempo para se cuidar</h3>
-            </div>    
-        </section>
-
-        <section id="quem-somos" class="conteudo-secundario">            
-            <div class="conteudo-secundario-cabecalho">
-                <h1 class="conteudo-secundario-titulo">Quem somos</h1>
-                <h4 class="conteudo-secundario-subtitulo">Studio Ana Cavalcante</h4>
-            </div>            
-
-            <div class="conteudo-secundario-bloco-ecrito">
-                <img class="conteudo-secundario-imagem" src="assets/img/imagem-doutora.png">
-                <p class="conteudo-secundario-bloco-escrito-texto">
-                    Oi gente, quero me apresentar oficialmente para vocês.
-                    Meu nome é Ana Cavalcante Porto, tenho 26 anos e sou natural de Maceió - Alagoas.                     
-                    Sou a única mulher entre 4 irmãos, minha vida não foi fácil kkk . Casada, cristã e amante de açaí!!!                    
+    <main>
+        <section id="quem-somos" class="apresentacao">
+            <div class="container-titulos">
+                <h1 class="titulo">Quem somos</h1>
+                <h4 class="subtitulo">Studio Ana Cavalcante</h4>
+            </div>
+            <div class="container-apresentacao-imagens-texto">
+                <img class="imagem-apresentacao" src="assets/img/imagem-doutora.png">
+                <p class="texto-apresentacao">
+                    Oi gente, quero me apresentar oficialmente para vocês.<br>
+                    Meu nome é Ana Cavalcante Porto, tenho 26 anos e sou natural de Maceió/AL.                     
+                    Sou a única mulher entre 4 irmãos, minha vida não foi fácil kkk. Casada, cristã e amante de açaí!!!                    
                     Amo cuidar de pessoas, principalmente de idosos. Por esse motivo me formei em Fisioterapia. Trabalho na área há 4 anos. Sou pós graduada em Fisioterapia Dermatofuncional e formação em Pilates.                     
-                    Também possuo cursos na área de Estética e cuidados com a pele.                     
+                    Também possuo cursos na área de Estética e cuidados com a pele.<br>                
                     Te convido a me seguir para entender um pouco mais e aprender a cuidar de você e sua saúde.                     
                     Grande abraço! 🍃💚
                 </p>
             </div>
         </section>
-        
-        
-        <section id="especialidades" class="conteudo-terceiro">
-            <h2 class="conteudo-terceiro-titulo">Nossas Especialidades</h2>
-            <h3 class="conteudo-terceiro-subtitulo">Conheça aqui os serviços prestados</h3>
-            <div class="conteudo-terceiro-bloco-cards">
-                <div class="conteudo-terceiro-cards">
-                    <img class="conteudo-terceiro-cards-img" src="assets/img/fisioterapia-convencional.jpeg" alt="Imagem de Fisioterapia convencional">
-                    <div class="conteudo-terceiro-cards-texto">
-                        <h3 class="conteudo-terceiro-cards-escrito-titulo">Fisioterapia Convencional</h3>
-                        <p class="conteudo-terceiro-cards-escrito-texto">Beneficio</p>
-                    </div>
-                </div>
-                <div class="conteudo-terceiro-cards">
-                    <img class="conteudo-terceiro-cards-img" src="assets/img/Liberação-miofascial.jpeg">
-                    <div class="conteudo-terceiro-cards-texto">
-                        <h3 class="conteudo-terceiro-cards-escrito-titulo">Liberação Miofascial</h3>
-                        <p class="conteudo-terceiro-cards-escrito-texto">Beneficio</p>
-                    </div>
-                </div>
-                <div class="conteudo-terceiro-cards">
-                    <img class="conteudo-terceiro-cards-img" src="assets/img/limpeza-de-pele.jpg">
-                    <div class="conteudo-terceiro-cards-texto">
-                        <h3 class="conteudo-terceiro-cards-escrito-titulo">Limpeza de Pele</h3>
-                        <p class="conteudo-terceiro-cards-escrito-texto">Beneficio</p>
-                    </div>
-                </div>                
+
+        <section id="especialidades" class="especialidades">
+            <div class="container-titulos">
+                <h2 class="titulo">Nossas Especialidades</h2>
+                <h3 class="subtitulo">Conheça aqui os serviços prestados</h3>
             </div>
-            <div class="conteudo-terceiro-bloco-cards-dois">
-                <div class="conteudo-terceiro-cards">
-                    <img class="conteudo-terceiro-cards-img" src="assets/img/pilates.jpeg">
-                    <div class="conteudo-terceiro-cards-texto">
-                        <h3 class="conteudo-terceiro-cards-escrito-titulo">Pilates</h3>
-                        <p class="conteudo-terceiro-cards-escrito-texto">Beneficio</p>
-                    </div>
+
+            <div class="container-card1">
+                <div class="box cor-borda">
+                    <img class="img-cards" src="assets/img/fisioterapia-convencional.jpeg" alt="">
+                    <h2 class="titulo-card">Fisioterapia Convencional</h2>
+                    <p class="texto-card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat magni cum, illum error soluta aliquid provident eos. Ducimus consequatur, praesentium architecto ab neque fuga enim officia obcaecati, qui aliquid ut.</p>
                 </div>
-                <div class="conteudo-terceiro-cards">
-                    <img class="conteudo-terceiro-cards-img" src="assets/img/Ventosa.jpeg">
-                    <div class="conteudo-terceiro-cards-texto">
-                        <h3 class="conteudo-terceiro-cards-escrito-titulo">Ventosa</h3>
-                        <p class="conteudo-terceiro-cards-escrito-texto">Beneficio</p>
-                    </div>
+                <div class="box cor-borda">
+                    <img class="img-cards" src="assets/img/Liberação-miofascial.jpeg" alt="">
+                    <h2 class="titulo-card">Liberação Miofascial</h2>
+                    <p class="texto-card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat magni cum, illum error soluta aliquid provident eos. Ducimus consequatur, praesentium architecto ab neque fuga enim officia obcaecati, qui aliquid ut.</p>
+                </div>
+                <div class="box cor-borda">
+                    <img class="img-cards" src="assets/img/limpeza-de-pele.jpg" alt="">
+                    <h2 class="titulo-card">Limpeza de Pele</h2>
+                    <p class="texto-card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat magni cum, illum error soluta aliquid provident eos. Ducimus consequatur, praesentium architecto ab neque fuga enim officia obcaecati, qui aliquid ut.</p>
                 </div>
             </div>
+
+            <div class="container-card2">
+                <div class="box cor-borda">
+                    <img class="img-cards" src="assets/img/pilates.jpeg" alt="">
+                    <h2 class="titulo-card">Pilates</h2>
+                    <p class="texto-card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat magni cum, illum error soluta aliquid provident eos. Ducimus consequatur, praesentium architecto ab neque fuga enim officia obcaecati, qui aliquid ut.</p>
+                </div>
+                <div class="box cor-borda">
+                    <img class="img-cards" src="assets/img/Ventosa.jpeg" alt="">
+                    <h2 class="titulo-card">Ventosa</h2>
+                    <p class="texto-card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat magni cum, illum error soluta aliquid provident eos. Ducimus consequatur, praesentium architecto ab neque fuga enim officia obcaecati, qui aliquid ut.</p>
+                </div>
+            </div>            
         </section>
 
-        <section id="contato" class="conteudo-quarto">
-            <h2 class="conteudo-quarto-titulo">Contato</h2>
-            <h3 class="conteudo-quarto-subtitulo">Fale conosco para mais informações</h3>
-            <div class="conteudo-quarto-bloco-contato">
-                <div class="mapa">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d491.79635139336364!2d-35.749430454034666!3d-9.563268199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf9d86e3549d06b03!2zOcKwMzMnNDcuOCJTIDM1wrA0NCc1Ny4zIlc!5e0!3m2!1spt-BR!2sbr!4v1647875193155!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <section id="contato" class="contato">
+            <div class="container-titulos">
+                <h2 class="titulo">Contato</h2>
+                <h3 class="subtitulo">Fale conosco para mais informações</h3>
+            </div>
+
+            <div class="container-contato">
+                <div class="bloco-mapa">
+                    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d827.0984579645043!2d-35.74914975279146!3d-9.563728649770312!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe02e1e469f0da386!2sStudio%20Ana%20Cavalcante!5e0!3m2!1spt-BR!2sbr!4v1652365721499!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
+
                 <div class="bloco-contato">
-                    <h3 class="conteudo-quarto-bloco-contato-titulo">Studio Ana Cavalcante</h3>
-                    <div class="informacoes">
-                        <p class="conteudo-quarto-bloco-contato-informacoes"><i class="icons uil uil-map-marker"></i> R. Antônio Viêira Filho, 108-182 - Tabuleiro do Martins, Maceió - AL, 57081-451</p>
-                        <p class="conteudo-quarto-bloco-contato-informacoes"><i class="icons uil uil-phone "></i> Telefone</p>
-                        <p class="conteudo-quarto-bloco-contato-informacoes"><i class="icons uil uil-envelope-alt "></i> Email</p>
+                    <h3 class="titulo-contato">Studio Ana Cavalcante</h3>
+                    <div class="bloco-dados-contato">
+                        <p class="dados-contato"><i class="icons-contato uil uil-map-marker"></i> R. Antônio Viêira Filho, 108-182 - Tabuleiro do Martins, Maceió - AL, 57081-451</p>
+                        <p class="dados-contato"><i class="icons-contato uil uil-phone "></i> (82) 9 9691-5416</p>
+                        <p class="dados-contato"><i class="icons-contato uil uil-envelope-alt "></i> studioanacavalcantee@gmail.com</p>
                     </div>
-                    <h4 class="conteudo-quarto-bloco-contato-social">Rede Social</h4>
-                    <div class="informacoes">
-                        <p class="conteudo-quarto-bloco-contato-informacoes"><i class="icons uil uil-instagram "></i>@studioanacavalcante</p>
-                        <a class="conteudo-quarto-bloco-contato-botao" href="https://api.whatsapp.com/send?phone=5582996915416&text=Olá,Desejo%20realizar%20minha%20aula%20experimental" target="blank">Fale agora pelo whatsapp <i class="uil uil-whatsapp"></i></a>
+                    <h4 class="titulo-social">Rede Social</h4>
+                    <div class="bloco-social">
+                        <p class="dados-contato"><i class="icons-contato uil uil-instagram "></i>@studioanacavalcante</p>
+                        <a class="botao-contato" href="https://api.whatsapp.com/send?phone=5582996915416&text=Olá,Desejo%20realizar%20minha%20aula%20experimental" target="blank">Fale agora pelo whatsapp <i class="uil uil-whatsapp"></i></a>
                     </div>
-                    
                 </div>
             </div>
         </section>
-
     </main>
-
     <footer class="rodape">   
         <div class="bloco-rodape">
-            <a href="index.html"><img class="rodape-imagem" src="assets/img/Logo-tranparente.png" alt="Logo Studio Ana Cavalcante"></a>
+            <a href="index.html"><img class="rodape-imagem" src="assets/img/Logo.png" alt="Logo Studio Ana Cavalcante"></a>
         </div>
-        <div class="copy">&copy;2022 por Studio Ana Cavalvante. Desenvolvido por <a href="https://www.instagram.com/jpcavalcante__" target="_blank" class="desenvolvedor">João Cavalcante</a>.</div>
+        <div class="copy">&copy;2022 por Studio Ana Cavalvante. Desenvolvido por <a href="https://www.instagram.com/jflsystems" target="_blank" class="desenvolvedor">JFL Systems</a>.</div>
     </footer>
-    <script src="assets/js/script.js"></script>
-    
+    <script src="assets/scripts/script.js"></script>
 </body>
 
 </html>
